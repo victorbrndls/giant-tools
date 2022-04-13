@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "XXX",
+    "YXY",
     " # ",
     " # "
   ],
@@ -10,10 +10,13 @@
       "tag": "minecraft:logs"
     },
     "X": {
-      "tag": "minecraft:stone_tool_materials"
+      "item": "minecraft:gold_ingot"
+    },
+    "Y": {
+      "item": "minecraft:gold_block"
     }
   },
   "result": {
-    "item": "gianttools:stone_pickaxe"
+    "item": "gianttools:gold_pickaxe"
   }
 }
