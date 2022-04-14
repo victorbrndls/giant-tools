@@ -51,7 +51,8 @@ public class GiantPickaxeItem extends PickaxeItem {
                 level.setBlock(pos, Blocks.AIR.defaultBlockState(), 11);
             }));
 
-            stack.hurtAndBreak(blocksToBreak.size(), entity, (e) -> e.broadcastBreakEvent(EquipmentSlot.MAINHAND));
+            final var durability = Math.max(blocksToBreak.size() / 3, 1);
+            stack.hurtAndBreak(durability, entity, (e) -> e.broadcastBreakEvent(EquipmentSlot.MAINHAND));
         }
 
         return false;
